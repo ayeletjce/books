@@ -1,0 +1,790 @@
+.logo-container {
+    position: relative;
+}
+
+.logo_image {
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Set a default width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.login-container {
+    background-color: rgba(108,41,73,255);
+    border-radius: 20px;
+    padding: 5px;
+    right: 10px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif; /* Change the font family */
+    margin-right: 50px;
+    color: white; 
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    position: absolute;
+    top: 10px; /* Adjust this value to change the top offset */
+    right: -35px; /* Adjust this value to change the right offset */
+}
+.login-link{
+    font-size: 15px; /* Increase the font size */
+    color: white;  
+    font-weight: bold; /* Make the text bold */
+}
+
+.login-container span {
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+/* body {
+    background: linear-gradient(to bottom, #b3e6ff, #80d1ff);
+}
+body {
+    background: linear-gradient(to right, #add8e6, #87ceeb);
+} */
+/* 
+.search-form {
+    width: 220px;
+    position: relative;
+    top: 80px;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* padding: 10px; */
+    /* border-radius: 5px; */
+/* } */ 
+/* Adjust the width of the search form */
+.search-form {
+    position: relative;
+    top: 65px;
+    left: -25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Adjust the width to shrink the form */
+    margin: 0 auto;
+}
+
+.search-box {
+    position: relative;
+    top: 0px;
+    left: 0%;
+    width: 50%; /* Make the search box take up the full width of the form */
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.icon:hover {
+    background-color: rgba(108, 41, 73, 255);
+}
+.search-icon:hover {
+    color: rgba(108, 41, 73, 255);
+}
+
+.search-icon {
+    margin-right: 5px;
+}
+.fa-envelope {
+    background-color: rgba(108,41,73,255);
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+  }
+  
+  .fa-phone {
+    background-color: rgba(41,152,151,255);
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+  }
+  
+  .fa-store {
+    background-color: #f1c40f;
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+  }
+  
+  .fa-user {
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+  }
+
+.search-box input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 25px; /* Ensure the corners are rounded */
+}
+
+.search-box .search-icon {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.search-box .clear-button {
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+#searchInput::placeholder {
+    text-align: right;
+}
+
+#searchInput {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; /* Add padding to make space for the search icon */
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    direction: rtl;
+}
+
+#searchInput:focus {
+    border-color: rgba(108,41,73,255);
+    box-shadow: 0 0 5px rgba(108,41,73,255);
+    outline: none;
+}
+#searchInput:not(:placeholder-shown) ~ .clear-button {
+    display: block;
+}
+.clear-button {
+    position: absolute;
+    top: 50%;
+    right: 350px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #aaa;
+    cursor: pointer;
+    display: none;
+}
+
+/* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.search-box.active .dropdown-content {
+    display: block;
+} */
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+#searchButton {
+    padding: 5px 10px;
+    background-color: rgba(108,41,73,255);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* Navigation Menu Styles */
+nav {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    background-color: rgba(108,41,73,255);
+    padding: 0px;
+    position: relative;
+    top: 100px; /* Adjust this value to position the nav below the logo and search */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-menu {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the menu items horizontally */
+}
+
+.main-menu > li {
+    position: relative;
+}
+
+.main-menu > li > a {
+    display: block;
+    padding: 10px 70px;
+    text-decoration: none;
+    color: white; /* Change the text color to rgb(67, 67, 183) */
+    border-right: 1px solid #ccc;
+}
+.main-menu > li:last-child > a {
+    border-right: none; /* Remove the right border from the last menu item */
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.sub-menu li {
+    padding: 12px 16px;
+}
+
+.sub-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.main-menu > li:hover .sub-menu {
+    display: block;
+}
+.sub-menu li a {
+    color: rgba(108,41,73,255); /* Change the sub-menu text color to rgb(67, 67, 183) */
+    text-decoration: none;
+}
+aside {
+    width: 240px;
+    background-color: white;
+    padding: 10px;
+    float: right;
+    position: absolute; 
+    top: 190px;
+    border: rgba(232,75,53,255) 3px solid; 
+    right: 10px; 
+    /* position: fixed; */
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(108,41,73,255); 
+    display: flex;
+    justify-content: center; /* Add this line */
+    flex-direction: column; /* Optional: to center vertically as well */
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.aside-list{
+    width: 220px;
+    height: 1485px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* WebKit-based browsers (Chrome, Safari, Opera) */
+.aside-list::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+.aside-list::-webkit-scrollbar-thumb {
+    background-color: rgba(108,41,73,255); /* Set the color of the scrollbar thumb */
+    border-radius: 6px; /* Add rounded corners to the scrollbar thumb */
+}
+
+.aside-list::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Set the color of the scrollbar track */
+    border-radius: 6px; /* Add rounded corners to the scrollbar track */
+}
+
+/* Firefox */
+.aside-list {
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+    scrollbar-color: rgba(108,41,73,255) rgba(0, 0, 0, 0.1); /* Set the colors of the scrollbar thumb and track */
+}
+
+
+.sale-banner {
+    color: white;
+    border: rgba(245,158,36,255) 3px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(41,152,151,255);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-title {
+    width: 1215px;
+    /* margin-left: 550px; */
+    background-color: rgba(108,41,73,255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white
+}
+
+.category-sections {
+    color: rgba(108,41,73,255); 
+    margin-top: 120px;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}  
+
+/* WebKit-based browsers (Chrome, Safari, Opera) */
+.book-list::-webkit-scrollbar,
+.book-list1::-webkit-scrollbar {
+    height: 12px; /* Set the height of the scrollbar */
+}
+
+.book-list::-webkit-scrollbar-thumb,
+.book-list1::-webkit-scrollbar-thumb {
+    background-color: rgba(108,41,73,255); /* Set the color of the scrollbar thumb */
+    border-radius: 6px; /* Add rounded corners to the scrollbar thumb */
+}
+
+.book-list::-webkit-scrollbar-track,
+.book-list1::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Set the color of the scrollbar track */
+    border-radius: 6px; /* Add rounded corners to the scrollbar track */
+}
+
+/* Firefox */
+.book-list,
+.book-list1 {
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+    scrollbar-color: rgba(108,41,73,255) rgba(0, 0, 0, 0.1); /* Set the colors of the scrollbar thumb and track */
+}
+
+
+.book-list1 {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.book-list {
+    width: 1175px;
+    /* display: flex; */
+    overflow-x: auto;
+    white-space: nowrap;
+    /* margin-bottom: 20px; */
+    margin-left: 40px;
+    height: 350px;
+}
+
+.book-item {
+    display: inline-block;
+    margin-right: 20px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); */
+    border-radius: 10px;
+    width: 150px;
+}
+.book-item2 {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    width: 200px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+
+.book-item img {
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    /* transition: transform 0.3s ease; Smooth transition effect */
+}
+
+.book-item2 img {
+    max-width: 100px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+   /* transition: transform 0.3s ease; Smooth transition effect */
+}
+
+.book-item2:hover{
+    /* transform: scale(1.05); */
+    border: rgba(108,41,73,255) 2px solid;
+} 
+
+.book-item:hover{
+    /* transform: scale(1.05); */
+    border: rgba(108,41,73,255) 2px solid;
+}
+.scroll-watcher{
+    height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(108,41,73,255);
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+button {
+    background-color: rgba(245,158,36,255);
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 10px 20px; /* Add some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the button inline */
+    font-size: 10px; /* Set font size */
+    margin: 10px 0; /* Add some margin */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 4px; /* Add rounded corners */
+}
+
+  /* Button hover effect */
+button:hover {
+    background-color: rgba(41,152,151,255); /* Darker green on hover */
+}
+
+@keyframes scroll-watcher {
+    to {scale: 1 1; }
+}
+
+.normal-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+} 
+
+.sidebar-menu{
+    display: none;
+}
+
+/* New CSS for small screen support */
+@media (max-width: 980px) {
+
+    body{
+        overflow-x: hidden;
+        
+    }
+
+    aside{
+        display: none;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo_image{
+        top: 20px; /* Adjust as needed */
+        left: 20%;
+        transform: translateX(-50%);
+        width: 100px; /* Set a default width */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 100%;
+        max-height: 100%; 
+        padding: 40px; 
+    }
+
+    .search-form {
+        top: 0px;
+        left: -80px;
+        width: 63%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .search-box {
+        width: calc(100% - 40px); /* Adjust width for padding and icon */
+    }
+
+    .search-box input[type="text"] {
+        padding-right: 30px; /* Adjust for search icon */
+    }
+
+    .search-icon {
+        left: 10px;
+    }
+
+    .clear-button {
+        right: 10px;
+    }
+    .category-title{
+        width: 100%;
+    }
+
+    .main-menu {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger-menu span {
+        font-size: 30px;
+        color: white;
+    }
+
+    .sidebar-menu {
+        position: fixed;
+        top: 200px;
+        left: 550px;
+        /* width: 250px; */
+        height: 100%;
+        color: white;
+        background-color: rgba(108, 41, 73, 255);
+        transition: left 0.3s ease;
+        z-index: 1000;
+        height: 380px;
+    }
+    
+
+    .sub-menu {
+        display: none;
+        position: absolute;
+        background-color: rgba(41,152,151,255);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .sub-menu li {
+        padding: 10px 10px;
+    }
+    .sidebar-menu > li:hover .sub-menu {
+        display: block;
+    }
+    .sidebar-menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .sidebar-menu ul li {
+        padding: 2px;
+        text-align: center;
+    }
+
+    .sidebar-menu ul li a {
+        /* color:rgb(108,43,76); */
+        color: white;
+        font-family: Arial, sans-serif;;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .sidebar-menu ul li a:hover {
+        background-color: rgba(245, 158, 36, 255);
+    }
+
+    .sub-menu {
+        position: static;
+        box-shadow: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sub-menu li {
+        padding: 10px 0;
+    }
+
+    .sub-menu li a {
+        color: white;
+    } 
+
+    .hamburger-menu:hover .sidebar-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 8px;
+    }
+    
+    .sidebar-menu:hover .sub-menu,
+    .sidebar-menu > li:hover > .sub-menu {
+        display: block;
+    }
+
+    nav {
+        /* top: 150px; Adjust this value to position the nav below the logo and search */
+        padding: 2px;
+        top: 110px;
+        left: 0;
+        transform: none;
+        width: 100%;
+    }
+
+    aside {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .book-list, .book-list1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .book-item, .book-item2 {
+        margin: 10px auto;
+    }
+}
+/* Footer Styles */
+footer {
+    background-color:  rgba(108,41,73,255);
+    padding: 50px;
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+}
+
+.contact-info,
+.footer-links {
+    margin-left: -150px;
+    flex-basis: 35%;
+}
+
+.contact-info h3,
+.footer-links h3 {
+    direction: rtl;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    direction: rtl;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 5px 0;
+}
+
+.footer-links ul {
+    direction: rtl;
+    font-family: Arial, sans-serif;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    font-family: Arial, sans-serif;
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 980px) {
+    /* footer {
+        flex-direction: column;
+    } */
+
+    .contact-info,
+    .footer-links {
+        flex-basis: 100%;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 480px) {
+    .logo_image{
+        top: 30px; /* Adjust as needed */
+        left: -10%;
+        transform: translateX(-20%);
+        width: 30px; /* Set a default width */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 100px;
+        max-height: 50%; 
+        padding: 60px; 
+    }
+    
+    .search-form {
+        top: 30px;
+        left: -10px;
+        width: 90%;
+        padding: 15px 10px;
+        box-sizing: border-box;
+    }
+
+    .search-box {
+        width: calc(100% - 40px); /* Adjust width for padding and icon */
+    }
+
+    .search-box input[type="text"] {
+        padding-right: 30px; /* Adjust for search icon */
+}
+footer {
+    background-color:  rgba(108,41,73,255);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    
+}
+.login-container{
+    /* left: 0px; */
+    right: 70px;
+    position: absolute;
+}
+.login-container span {
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px;
+}
+
+}

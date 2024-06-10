@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="he">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>חנות ספרים</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <div class = "scroll-watcher"></div> 
+        <div class="logo-container">
+            <div class="logo_image">
+                <img src="logo.png" alt="logo" style="width: 400px; height: auto;">
+            </div>
+            <form class="search-form">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="חיפוש ספרים...">
+                    <!-- <div class="search-icon">&#x1F50D;</div> -->
+                    <i class="search-icon fas fa-search"></i>
+                    <div class="clear-button">&times;</div>
+                    <!-- <div class="dropdown-content" id="dropdownContent"></div> -->
+                </div>
+                <i class="icon fas fa-envelope"></i>
+                <i class="icon fas fa-phone"></i>
+                <i class="icon fas fa-store"></i>
+                <i class="icon fas fa-user"></i>
+            </form>
+        </div>
+        <nav>
+            <div class="hamburger-menu">
+                <span>&#9776;</span>
+                <div class="sidebar-menu">
+                    <ul>
+                        <li><a href="#">עיון</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">פרשת שבוע</a></li>
+                                <li><a href="#">נ"ך</a></li>
+                                <li><a href="#">חסידות</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ילדים ונוער</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">פעוטות</a></li>
+                                <li><a href="#">קומיקס</a></li>
+                                <li><a href="#">ילדים</a></li>
+                                <li><a href="#">נוער</a></li>
+                            </ul>
+                        <li><a href="#">זוגיות ומשפחה</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">זוגיות</a></li>
+                                <li><a href="#">הריון ולידה</a></li>
+                                <li><a href="#">חינוך והורות</a></li>
+                            </ul>
+                        <li><a href="#">קריאה ופנאי</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">טיולים וטבע</a></li>
+                                <li><a href="#">בישול</a></li>
+                                <li><a href="#">סיפורי צדיקים</a></li>
+                            </ul>
+                        </li>
+                </ul>
+                </div>
+                </div>
+            <div class="normal-menu">
+            <ul class="main-menu">
+                <li><a href="#">עיון</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">פרשת שבוע</a></li>
+                        <li><a href="#">נ"ך</a></li>
+                        <li><a href="#">חסידות</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ילדים ונוער</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">פעוטות</a></li>
+                        <li><a href="#">קומיקס</a></li>
+                        <li><a href="#">ילדים</a></li>
+                        <li><a href="#">נוער</a></li>
+                    </ul>
+                    <li><a href="#">זוגיות ומשפחה</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">זוגיות</a></li>
+                        <li><a href="#">הריון ולידה</a></li>
+                        <li><a href="#">חינוך והורות</a></li>
+                    </ul>
+                    <li><a href="#">קריאה ופנאי</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">טיולים וטבע</a></li>
+                            <li><a href="#">בישול</a></li>
+                            <li><a href="#">סיפורי צדיקים</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="category-sections">
+            <div class="category-section">
+                <h3 class="category-title">חדש על המדף</h3>
+                <div class="book-list horizontal-scroll">
+                    <div class="book-item2">
+                        <img src="הדמיה-אליקופטר-באנטרטיקה חדש -.png" alt="Book 1">
+                        <h5>אליקופטר באנטרטיקה</h5>
+                        <p>מחיר: ₪49</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="אל-חזור חדש.png" alt="Book 2">
+                        <h5>אל חזור</h5>
+                        <p>מחיר: ₪82</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="הילדים-מטירת-הלר חדש.png" alt="Book 3">
+                        <h5>הילדים מטירת הלר</h5>
+                        <p>מחיר: ₪60</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="מטרות-רווח חדש.png" alt="Book 4">
+                        <br>
+                        <h5>מטרות רווח</h5>
+                        <p>מחיר: ₪75</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="שבועת-הנוקם-הדמיה חדש.png" alt="Book 5">
+                        <br>
+                        <h5>שבועות הנוקם</h5>
+                        <p>מחיר: ₪65</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="בכל-עת-ליבי-קליין חדש.png" alt="Book 5">
+                        <br>
+                        <h5>בכל עת</h5>
+                        <p>מחיר: ₪84</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="אם-מישו-שומע-הדמיה חדש.png" alt="Book 5">
+                        <br>
+                        <h5>אם משהו שומע</h5>
+                        <p>מחיר: ₪70</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <!-- Add more book items here -->
+                </div>
+            </div>
+            <div class="category-section">
+                <h3 class="category-title">רבי מכר</h3>
+                <div class="book-list horizontal-scroll">
+                    <div class="book-item2">
+                        <img src="אם-לסבתא-היו רבי מכר.png" alt="Bestseller 1">
+                        <h5>אם לסבתא היו גלגלים</h5>
+                        <p>מחיר: ₪60</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="אבודים-בקונגו-הדמיה רבי מכר.png" alt="Bestseller 2">
+                        <h5>אבודים בקונגו</h5>
+                        <p>מחיר: ₪49</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="מאדאם-הדמיה רבי מכר.png" alt="Bestseller 3">
+                        <h5>מאדם</h5>
+                        <p>מחיר: ₪65</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                <div class="book-item2">
+                    <img src="אמוראים-רבי-אבהו רבי מכר.png" alt="Bestseller 4">
+                    <h5>רבי אבהו קומיקס</h5>
+                    <p>מחיר: ₪12</p>
+                    <a href="book-details.html">
+                        <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                        <br>
+                        <br>
+                </div>
+                <div class="book-item2">
+                    <img src="פנאטי-הדמיה רבי מכר.png" alt="Bestseller 5">
+                    <h5>פנאטי</h5>
+                    <p>מחיר: ₪65</p>
+                    <a href="book-details.html">
+                        <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                        <br>
+                        <br>
+                </div>
+                <div class="book-item2">
+                    <img src="לתקשר-כמו-גדול-הדמיה רבי מכר.png" alt="Bestseller 6">
+                    <h5>לתקשר כמו גדול</h5>
+                    <p>מחיר: ₪45</p>
+                    <a href="book-details.html">
+                        <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                        <br>
+                        <br>
+                </div>
+                    <!-- Add more book items here -->
+                </div>
+            </div>
+            <div class="category-section">
+                <h3 class="category-title">קומיקס</h3>
+                <div class="book-list horizontal-scroll">
+                    <div class="book-item2">
+                        <img src="קומיקס צוללים.png" alt="Gift 1">
+                        <h5>צללים סובייטים</h5>
+                        <p>מחיר: ₪65</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="בכספת קומיקס.png" alt="Gift 2">
+                        <h5>הסוד בכספת</h5>
+                        <p>מחיר: ₪70</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="משימת-ריגול-הדמיה קומיקס.png" alt="Gift 3">
+                        <h5>משימת ריגול</h5>
+                        <p>מחיר: ₪50</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="קופסא-שחורה2 eunhex.png" alt="Gift 4">
+                        <h5>קופסה שחורה</h5>
+                        <p>מחיר: ₪70</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="פעמון קומיקס.png" alt="Gift 5">
+                        <h5>פעמון בטירת ההגמון</h5>
+                        <p>מחיר: ₪70</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="ילדוליס-9 קומיקס.png" alt="Gift 5">
+                        <h5>ילדודס 9</h5>
+                        <p>מחיר: ₪52</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="תקלה-בחלל-הדמיה קומיקס.png" alt="Gift 5">
+                        <h5>תקלה בחלל</h5>
+                        <p>מחיר: ₪40</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <!-- Add more book items here -->
+                </div>
+            </div>
+            <!-- <div class="category-section">
+                <h3 class="category-title">מבצעי השבוע</h3>
+                <div class="book-list horizontal-scroll">
+                    <div class="book-item2">
+                        <img src="מבצעי השבוע - אוהב טהר לב.jpg" alt="Sale 1">
+                        <h5>אהב טהר לב| חנן פורת</h5>
+                        <p>מחיר: ₪65</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="מבצעי השבוע - מוקצה.jpg" alt="Sale 2">
+                        <h5>מוקצה | אורי אורבך</h5>
+                        <p>מחיר: ₪39</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="מבצעי השבוע - מורה נבוכים.jpg" alt="Sale 3">
+                        <h5>מורה נבוכים ג"כ | מפעל משנה תורה</h5>
+                        <p>מחיר: ₪180</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    <div class="book-item2">
+                        <img src="מבצעי השבוע - משנה תורה.jpg" alt="Sale 4">
+                        <h5>משנה תורה להרמב"ם בכרך אחד</h5>
+                        <p>מחיר: ₪180</p>
+                        <a href="book-details.html">
+                            <button>לפרטים ורכישה <i class="icon fas fa-shopping-cart"></i></button></a>
+                            <br>
+                        <br>
+                    </div>
+                    Add more book items here
+                </div>
+            </div> -->
+        </div>
+        <div class="login-container">
+            <span></span>
+            <a href="#" class="login-link">התחבר \ הירשם</a>
+            <span></span>
+            <i class="fas fa-user"></i>
+            <span></span>
+        </div>
+        <div id="searchResults"></div>
+        <aside>
+            <div class="aside-list">
+            <div class="sale-banner">
+                <h3>מבצע על ספרים בהנחה</h3>
+                <!-- <p>קנה עכשיו והשג הנחה מיוחדת</p> -->
+            </div>
+            <div class="category-section">
+                <h4>עכשיו ב - 25% הנחה</h4>
+                <div class="book-list1">
+                    <div class="book-item">
+                        <img src="עליה-שהיא-ירידה-הדמיה מבצע.png" alt="Book 1">
+                        <h5>עליה שהיא ירידה</h5>
+                        <p>מחיר: ₪15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-section">
+                <div class="book-list1">
+                    <div class="book-item">
+                        <img src="אמוראים-רבה-בר-נחמני מבצע.png" alt="Book 1">
+                        <h5>רבה בר נחמני בקומיקס</h5>
+                        <p>מחיר: ₪12</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-section">
+                <div class="book-list1">
+                    <div class="book-item">
+                        <img src="בריא-ומהיר- מבצע.png" alt="Book 1">
+                        <h5>בריא ומהיר</h5>
+                        <p>מחיר: ₪25</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-section">
+                <div class="book-list1">
+                    <div class="book-item">
+                        <img src="מפתח-הלב ncmg.png" alt="Book 1">
+                        <h5>מפתח הלב</h5>
+                        <p>מחיר: ₪25</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-section">
+                <div class="book-list1">
+                    <div class="book-item">
+                        <img src="יהושע-3 מבצע.png" alt="Book 1">
+                        <h4>ואלה יעמדו</h4>
+                        <p>מחיר: ₪12</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </aside>
+        <footer>
+        <div class="contact-info">
+            <h3>צרו קשר</h3>
+            <p>טלפון: 03-1234567</p>
+            <p>דוא"ל: info@bookstore.com</p>
+            <p>כתובת: רחוב לוי 123, תל אביב</p>
+        </div>
+        <div class="footer-links">
+            <h3>מידע נוסף</h3>
+            <ul>
+                <li><a href="#">אודות</a></li>
+                <li><a href="#">תנאי שימוש</a></li>
+                <li><a href="#">מדיניות פרטיות</a></li>
+                <li><a href="#">שאלות נפוצות</a></li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+    </body>
+</html>
